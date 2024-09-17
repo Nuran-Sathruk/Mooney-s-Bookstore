@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image {
+    background-image: url('../images/bookstore.jpg');
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+#about {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#catalog {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#catalog h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.book {
+    text-align: center;
+    width: 30%;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book h3 {
+    margin: 10px 0;
+}
+
+#contact {
+    padding: 50px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+header nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+.hero-image {
+    height: 300px;
+}
+
+.hero-text h2 {
+    font-size: 2em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+#about h2 {
+        font-size: 2em;
+    }
+
+#about p {
+    font-size: 1em;
+}
+
+.book-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#contact h2 {
+    font-size: 2em;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.hero-text h2 {
+    font-size: 2.5em;
+}
+
+.hero-text p {
+    font-size: 1.3em;
+}
+
+.book {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+.hero-image {
+    height: 500px;
+}
+
+.hero-text h2 {
+    font-size: 3em;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.book-list {
+    justify-content: space-around;
+}
+
+.book {
+    width: 30%;
+}
+
+}
